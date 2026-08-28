@@ -1,0 +1,567 @@
+{
+  "status": "pass",
+  "study": "clause-ablation",
+  "experiment": 2,
+  "seed": 20260812,
+  "target_count": 48,
+  "variants": [
+    "full",
+    "drop_final",
+    "final_only",
+    "generic_only",
+    "malformed"
+  ],
+  "gate_path": "$NLA_ROOT/pilots/wildcard-nla/clause-ablation/results/gate.json",
+  "gate_status": "pass",
+  "operational_validity": {
+    "gate_pass": true,
+    "content_targets": 48,
+    "finite_scores": true,
+    "gold_extract_from_frozen": true
+  },
+  "predictions": {
+    "final_only_retains": "final_only retains joint specificity for most targets (rate >= 0.5).",
+    "generic_only_collapses": "generic_only collapses (rate <= 0.25; chance is 0.125).",
+    "drop_final_unknown": "drop_final is the discriminating unknown: no point prediction.",
+    "malformed_unknown": "malformed is unknown: if joint specificity survives, malformation does not explain the frozen boundary failure; if it dies, the confound stands."
+  },
+  "headline": {
+    "full": {
+      "n": 48,
+      "joint_specific_count": 48,
+      "joint_specific_rate": 1.0,
+      "bootstrap_joint_specific": {
+        "seed": 20260812,
+        "resamples": 10000,
+        "cluster_count": 24,
+        "cluster_sizes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "statistic": "mean",
+        "observed": 1.0,
+        "lower": 1.0,
+        "upper": 1.0
+      }
+    },
+    "drop_final": {
+      "n": 48,
+      "joint_specific_count": 41,
+      "joint_specific_rate": 0.8541666666666666,
+      "bootstrap_joint_specific": {
+        "seed": 20260812,
+        "resamples": 10000,
+        "cluster_count": 24,
+        "cluster_sizes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "statistic": "mean",
+        "observed": 0.8541666666666666,
+        "lower": 0.75,
+        "upper": 0.9583333333333334
+      }
+    },
+    "final_only": {
+      "n": 48,
+      "joint_specific_count": 48,
+      "joint_specific_rate": 1.0,
+      "bootstrap_joint_specific": {
+        "seed": 20260812,
+        "resamples": 10000,
+        "cluster_count": 24,
+        "cluster_sizes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "statistic": "mean",
+        "observed": 1.0,
+        "lower": 1.0,
+        "upper": 1.0
+      }
+    },
+    "generic_only": {
+      "n": 48,
+      "joint_specific_count": 5,
+      "joint_specific_rate": 0.10416666666666667,
+      "bootstrap_joint_specific": {
+        "seed": 20260812,
+        "resamples": 10000,
+        "cluster_count": 24,
+        "cluster_sizes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "statistic": "mean",
+        "observed": 0.10416666666666667,
+        "lower": 0.020833333333333332,
+        "upper": 0.1875
+      }
+    },
+    "malformed": {
+      "n": 48,
+      "joint_specific_count": 48,
+      "joint_specific_rate": 1.0,
+      "bootstrap_joint_specific": {
+        "seed": 20260812,
+        "resamples": 10000,
+        "cluster_count": 24,
+        "cluster_sizes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "statistic": "mean",
+        "observed": 1.0,
+        "lower": 1.0,
+        "upper": 1.0
+      }
+    }
+  },
+  "breakdown": {
+    "variant::full": {
+      "n": 48,
+      "joint_specific_count": 48,
+      "joint_specific_rate": 1.0,
+      "bootstrap_joint_specific": {
+        "seed": 20260812,
+        "resamples": 10000,
+        "cluster_count": 24,
+        "cluster_sizes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "statistic": "mean",
+        "observed": 1.0,
+        "lower": 1.0,
+        "upper": 1.0
+      }
+    },
+    "variant::full::category::safety": {
+      "n": 16,
+      "joint_specific_count": 16,
+      "joint_specific_rate": 1.0
+    },
+    "variant::full::category::compositional_planning": {
+      "n": 16,
+      "joint_specific_count": 16,
+      "joint_specific_rate": 1.0
+    },
+    "variant::full::category::social_character_ood": {
+      "n": 16,
+      "joint_specific_count": 16,
+      "joint_specific_rate": 1.0
+    },
+    "variant::full::position_stratum::content_early": {
+      "n": 24,
+      "joint_specific_count": 24,
+      "joint_specific_rate": 1.0
+    },
+    "variant::full::position_stratum::content_late": {
+      "n": 24,
+      "joint_specific_count": 24,
+      "joint_specific_rate": 1.0
+    },
+    "variant::drop_final": {
+      "n": 48,
+      "joint_specific_count": 41,
+      "joint_specific_rate": 0.8541666666666666,
+      "bootstrap_joint_specific": {
+        "seed": 20260812,
+        "resamples": 10000,
+        "cluster_count": 24,
+        "cluster_sizes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "statistic": "mean",
+        "observed": 0.8541666666666666,
+        "lower": 0.75,
+        "upper": 0.9583333333333334
+      }
+    },
+    "variant::drop_final::category::safety": {
+      "n": 16,
+      "joint_specific_count": 13,
+      "joint_specific_rate": 0.8125
+    },
+    "variant::drop_final::category::compositional_planning": {
+      "n": 16,
+      "joint_specific_count": 12,
+      "joint_specific_rate": 0.75
+    },
+    "variant::drop_final::category::social_character_ood": {
+      "n": 16,
+      "joint_specific_count": 16,
+      "joint_specific_rate": 1.0
+    },
+    "variant::drop_final::position_stratum::content_early": {
+      "n": 24,
+      "joint_specific_count": 20,
+      "joint_specific_rate": 0.8333333333333334
+    },
+    "variant::drop_final::position_stratum::content_late": {
+      "n": 24,
+      "joint_specific_count": 21,
+      "joint_specific_rate": 0.875
+    },
+    "variant::final_only": {
+      "n": 48,
+      "joint_specific_count": 48,
+      "joint_specific_rate": 1.0,
+      "bootstrap_joint_specific": {
+        "seed": 20260812,
+        "resamples": 10000,
+        "cluster_count": 24,
+        "cluster_sizes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "statistic": "mean",
+        "observed": 1.0,
+        "lower": 1.0,
+        "upper": 1.0
+      }
+    },
+    "variant::final_only::category::safety": {
+      "n": 16,
+      "joint_specific_count": 16,
+      "joint_specific_rate": 1.0
+    },
+    "variant::final_only::category::compositional_planning": {
+      "n": 16,
+      "joint_specific_count": 16,
+      "joint_specific_rate": 1.0
+    },
+    "variant::final_only::category::social_character_ood": {
+      "n": 16,
+      "joint_specific_count": 16,
+      "joint_specific_rate": 1.0
+    },
+    "variant::final_only::position_stratum::content_early": {
+      "n": 24,
+      "joint_specific_count": 24,
+      "joint_specific_rate": 1.0
+    },
+    "variant::final_only::position_stratum::content_late": {
+      "n": 24,
+      "joint_specific_count": 24,
+      "joint_specific_rate": 1.0
+    },
+    "variant::generic_only": {
+      "n": 48,
+      "joint_specific_count": 5,
+      "joint_specific_rate": 0.10416666666666667,
+      "bootstrap_joint_specific": {
+        "seed": 20260812,
+        "resamples": 10000,
+        "cluster_count": 24,
+        "cluster_sizes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "statistic": "mean",
+        "observed": 0.10416666666666667,
+        "lower": 0.020833333333333332,
+        "upper": 0.1875
+      }
+    },
+    "variant::generic_only::category::safety": {
+      "n": 16,
+      "joint_specific_count": 2,
+      "joint_specific_rate": 0.125
+    },
+    "variant::generic_only::category::compositional_planning": {
+      "n": 16,
+      "joint_specific_count": 1,
+      "joint_specific_rate": 0.0625
+    },
+    "variant::generic_only::category::social_character_ood": {
+      "n": 16,
+      "joint_specific_count": 2,
+      "joint_specific_rate": 0.125
+    },
+    "variant::generic_only::position_stratum::content_early": {
+      "n": 24,
+      "joint_specific_count": 3,
+      "joint_specific_rate": 0.125
+    },
+    "variant::generic_only::position_stratum::content_late": {
+      "n": 24,
+      "joint_specific_count": 2,
+      "joint_specific_rate": 0.08333333333333333
+    },
+    "variant::malformed": {
+      "n": 48,
+      "joint_specific_count": 48,
+      "joint_specific_rate": 1.0,
+      "bootstrap_joint_specific": {
+        "seed": 20260812,
+        "resamples": 10000,
+        "cluster_count": 24,
+        "cluster_sizes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "statistic": "mean",
+        "observed": 1.0,
+        "lower": 1.0,
+        "upper": 1.0
+      }
+    },
+    "variant::malformed::category::safety": {
+      "n": 16,
+      "joint_specific_count": 16,
+      "joint_specific_rate": 1.0
+    },
+    "variant::malformed::category::compositional_planning": {
+      "n": 16,
+      "joint_specific_count": 16,
+      "joint_specific_rate": 1.0
+    },
+    "variant::malformed::category::social_character_ood": {
+      "n": 16,
+      "joint_specific_count": 16,
+      "joint_specific_rate": 1.0
+    },
+    "variant::malformed::position_stratum::content_early": {
+      "n": 24,
+      "joint_specific_count": 24,
+      "joint_specific_rate": 1.0
+    },
+    "variant::malformed::position_stratum::content_late": {
+      "n": 24,
+      "joint_specific_count": 24,
+      "joint_specific_rate": 1.0
+    }
+  },
+  "per_target_dir": "$NLA_ROOT/pilots/wildcard-nla/clause-ablation/results/per-target",
+  "chance_joint_top1": 0.125,
+  "frozen_study_dir": "$NLA_ROOT/pilots/wildcard-nla/output-validity",
+  "config": {
+    "layer_index": 20,
+    "bootstrap_seed": 20260812,
+    "bootstrap_resamples": 10000,
+    "prompt_clusters": 24,
+    "positions_per_prompt": 2
+  }
+}
